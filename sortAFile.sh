@@ -8,11 +8,13 @@ else
 	echo "1st argument as file name"
 fi
 
+
 if [ ! -f "$fname" ]
 then
 	echo "File not exist."
 	exit 1
 fi
+
 
 if [ ! -r "$fname" ]
 then
@@ -20,13 +22,14 @@ then
 	exit 2
 fi
 
+
 awk -v var="$1" 'BEGIN {
 		        system("clear")
 		        print "This program sort a file"
 	            }
 	            {
-                  array[i++]=$0
-              } 
+                  	array[i++]=$0
+                  } 
      	        {	  
 		                for( i = 0 ; i < NR ; i++ ) {
 			                  for( j = 0 ; j < NR-i-1 ; j++ ) {
