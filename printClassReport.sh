@@ -38,4 +38,4 @@ awk 'BEGIN{ FS=" " }
 		printf"\nNo. of students having grade D   :  %d ",n6
 		printf"\nNo. of students having grade E   :  %d ",n7
 		printf"\nNo. of students having grade F   :  %d\n---------------------------------------------------------\n\n",n8
-		}' "student"
+		}' "printClassReport.ext"
