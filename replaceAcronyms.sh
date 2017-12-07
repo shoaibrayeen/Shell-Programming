@@ -22,7 +22,7 @@ then
 	exit 2
 fi
 
-awk  'FILENAME~/acronyms/ { for(i=2;i<=NF;i++)
+awk  'FILENAME~/replaceAcronyms/ { for(i=2;i<=NF;i++)
 				ar[$1]=ar[$1]$i" "
 			next }	
 	{
@@ -36,4 +36,4 @@ awk  'FILENAME~/acronyms/ { for(i=2;i<=NF;i++)
 			}
 		}
 		print $0
-	}' "acronyms" "$fname"
+	}' "replaceAcronyms" "$fname"
