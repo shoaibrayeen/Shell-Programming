@@ -1,0 +1,7 @@
+name physics chemistry maths english hindi
+shoaib 100 95 83 96 96
+neeraj 96 94 84 96 96
+rajeev 80 60 95 86 82
+abhishek 90 100 85 60 80
+hardik 85 68 87 79 82
+swapnil 100 100 80 90 85
